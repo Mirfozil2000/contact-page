@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gradient-to-br from-[#AE2D5D] to-150% to-[#2A4DD0] sm:bg-bgSvg bg-cover text-whiteColor">
+    <main class="min-h-screen flex flex-col gap-8 px-6 font-oficial">
+      <header class="row-span-1 pt-4 flex flex-col gap-8 justify-center">
+        <img class="w-[120px] pt-1 pl-8" src="images/contact-form-icon.svg" alt="Becv Icon">
+        <h1 class="text-6xl w-12/12 md:w-[590px] leading-snug font-semibold text-center self-center pt-3">Interested in our business pricing?</h1>
+        <p class="text-2xl w-4/6 md:w-[500px] text-center self-center">Fill out the form to view details and we’ll contact you as soon as possible.</p>
+      </header>
+      <form class="flex flex-col gap-4 bg-grayColor bg-opacity-20 p-4 mt-[60px] mb-[80px] rounded-2xl sm:w-8/12 sm:p-8 self-center" action>
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <label class="sm:w-6/12" for="name">
+            <p>Name</p>
+            <input class="text-txtColor rounded-2xl p-4 py-6 mb-4 w-[100%] font-semibold" id="name" name="name" type="text" placeholder="Ethan Johnson">
+          </label>
+          
+          <label class="sm:w-6/12" for="email">
+            <p>Company Email</p>
+            <input class="text-txtColor rounded-2xl p-4 py-6 mb-4 w-[100%] font-semibold" id="email" name="email" type="email" placeholder="ethan@johnson.com">
+          </label>
+        </div>
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <label class="sm:w-6/12" for="employees">
+            <p>Company Size</p>
+            <select class="text-txtColor rounded-2xl p-4 py-6 mb-4 w-[100%] font-semibold" id="employees" name="employees">
+              <option value="[50, 100]" selected>50 - 100 employees</option>
+              <option value="[100, 150]">100 - 150 employees</option>
+              <option value="[150, 200]">150 - 200 employees</option>
+            </select>
+          </label>
+          <label class="sm:w-6/12" for="subject">
+            <p>Subject</p>
+            <select class="text-txtColor rounded-2xl p-4 py-6 mb-4 w-[100%] font-semibold" id="subject" name="subject">
+              <option value="Building Landing pages" selected>Building Landing pages</option>
+              <option value="Building SPA">Building SPA</option>
+              <option value="Designing UX">Designing UX</option>
+            </select>
+          </label>
+        </div>
+        
+        <label for="message">Message</label>
+        <textarea class="text-txtColor rounded-2xl p-4 mb-4 resize-none font-semibold" id="message" name="msg" cols="30" rows="10" placeholder="50 - 10 employees">50 - 10 employees</textarea>
+  
+        <button class="text-sendButtonColor bg-whiteColor rounded-2xl p-4 mb-4 font-" type="submit">Contact Sales</button>
+      </form>
+    </main>
+  </body>
+</html>
